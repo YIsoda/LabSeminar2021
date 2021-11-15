@@ -4,3 +4,5 @@
 ## Required packages
 
 - Plots.jl
+
+https://mybinder.org/v2/gh/YIsoda/LabSeminar2021/HEAD

@@ -6,7 +6,7 @@ function PlotReflectivity()
     ε(ω, ω_p) = 1 - ω_p^2 / ω^2
 
 
-    ε_damped(ω) = 1 - (3.6e-3) / (im * ω * ε_0) #8.85418782e-12)
+    ε_damped(ω) = 1 - (3.6e-5) / (im * ω * ε_0) #8.85418782e-12)
 
     ε_actual(ω, ω_p, σ) = 1 - ω_p^2 / (ω^2 + im * ω * ε_0 * ω_p^2 / σ)
 
@@ -24,7 +24,7 @@ function PlotReflectivity()
     # print(Reflectivity.(ε.(x, 1.0)))
     # print(Reflectivity.(ε_damped.(x2)))
 
-    σ = 3.6e4
+    σ = 3.6e5
 
     function reflectivity_nodecay(ω::Float64, ω_p::Float64)
         if ω < ω_p
