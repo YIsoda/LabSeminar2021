@@ -3,5 +3,8 @@ uuid = "b21d86c6-894a-4dfa-b764-2f94484d35d4"
 authors = ["Y. Isoda <y.isoda.3953@gmail.com>"]
 version = "0.1.0"
 
+[compat]
+julia = "1.6"
+
 [deps]
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
